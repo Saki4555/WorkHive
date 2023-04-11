@@ -1,21 +1,25 @@
 [
     {
-        "logo": "https://example.com/logo1.png",
+        "id": 1,
+        "logo": "images/one.png",
         "name": "ABC Design Studio",
         "jobs": "100+ jobs available"
     },
     {
-        "logo": "https://example.com/logo2.png",
+        "id": 2,
+        "logo": "images/two.png",
         "name": "XYZ Branding",
         "jobs": "50+ jobs available"
     },
     {
-        "logo": "https://example.com/logo3.png",
+        "id": 3,
+        "logo": "images/three.png",
         "name": "PQR Design Co.",
         "jobs": "20+ jobs available"
     },
     {
-        "logo": "https://example.com/logo4.png",
+        "id": 4,
+        "logo": "images/four.png",
         "name": "LMN Creative Agency",
         "jobs": "10+ jobs available"
     }

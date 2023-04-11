@@ -28,6 +28,7 @@
     @apply text-[#7E90FE]
   }
 
+
   .banner-btn{
     @apply px-7 py-4 rounded-lg text-white text-xl font-medium
   }
