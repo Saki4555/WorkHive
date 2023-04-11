@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SingleFeaturedJob = ({ featuredJob }) => {
 
     const { company_logo, id, company_name, contact_information, job_title, remote_or_onsite, fulltime_or_parttime, location, salary } = featuredJob;
 
-    console.log(featuredJob);
+
     return (
         <div>
             <div className='py-9 pl-9 bg-slate-50 rounded-lg shadow-md'>
@@ -27,11 +28,12 @@ const SingleFeaturedJob = ({ featuredJob }) => {
                         <p className='text-[#757575]'>{location}</p>
                     </div>
                     <div>
-                        <p className='text-[#757575]'>{salary}</p>
+                        <p className='text-[#757575]'>Salaray: {salary}</p>
                     </div>
                 </div>
 
-                <button className='btn-bg text-white px-3 py-2 rounded font-medium btn-animation'>View Details</button>
+                <Link to={`/job/${id}`}><button className='btn-bg text-white px-3 py-2 rounded font-medium btn-animation'>View Details</button></Link>
+                
             </div>
         </div>
     );
