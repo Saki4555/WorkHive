@@ -1,3 +1,4 @@
+import { CurrencyDollarIcon, MapIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/solid';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -24,10 +25,12 @@ const SingleFeaturedJob = ({ featuredJob }) => {
                 </div>
 
                 <div className='flex gap-2 mb-2'>
-                    <div>
+                    <div className='flex gap-2'>
+                       <MapPinIcon className="h-6 w-6 text-slate-300 m-0 p-0"/>
                         <p className='text-[#757575]'>{location}</p>
                     </div>
-                    <div>
+                    <div className='flex gap-2'>
+                        <CurrencyDollarIcon className='h-6 w-6 text-slate-300 m-0 p-0'/>
                         <p className='text-[#757575]'>Salaray: {salary}</p>
                     </div>
                 </div>

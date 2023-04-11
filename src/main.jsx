@@ -12,7 +12,7 @@ import AppliledJobs from './Components/AppliedJobs/AppliledJobs';
 import Blog from './Components/Blog/Blog';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import JobDetails from './Components/JobDetails/JobDetails';
-import loadFromLocalStorage from './Loaders/loadFromLocalStorage';
+
 
 const router = createBrowserRouter([
   {
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       {
         path: '/statistics',
         element: <Statistics></Statistics>,
-        loader: loadFromLocalStorage
+       
       },
       {
         path: '/applied',
