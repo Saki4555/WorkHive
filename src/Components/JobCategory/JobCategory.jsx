@@ -15,12 +15,14 @@ const JobCategory = () => {
                 <h1 className='text-5xl font-bold mb-4'>Job Category List</h1>
                 <p className='text-[#757575] font-medium'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
-            {
-                jobs.map(job => <SingleJobCategory
-                    key={job.id}
-                    job={job}
-                ></SingleJobCategory>)
-            }
+            <div className='my-container lg:flex justify-between'>
+                {
+                    jobs.map(job => <SingleJobCategory
+                        key={job.id}
+                        job={job}
+                    ></SingleJobCategory>)
+                }
+            </div>
         </div>
     );
 };
