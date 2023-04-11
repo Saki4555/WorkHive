@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { CurrencyDollarIcon, EnvelopeIcon, IdentificationIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/solid'
 import JobDetailsBanner from '../JobDetailsBanner/JobDetailsBanner';
+import { addToDb } from '../../Utilites/fakeDb';
 
 const JobDetails = () => {
 
@@ -19,8 +20,11 @@ const JobDetails = () => {
         setJob(jobData);
     }, [])
 
+    const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title, contact_information, location} = job;
 
-    const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title, contact_information, location } = job;
+    const setToLocalStorgare = (jobId) =>{
+        addToDb(jobId);
+    }
 
     return (
         <div>
@@ -72,7 +76,7 @@ const JobDetails = () => {
                                         <p className='text-[#757575]'><span className='font-semibold text-[#1A1919] mr-2'>Address:</span>{location}</p>
                                     </div>
 
-                                    <button className='w-full btn-bg btn-animation mt-8 py-4 rounded-lg text-white font-semibold text-lg'>Apply Now</button>
+                                    <button onClick={()=> setToLocalStorgare(job?.id)} className='w-full btn-bg btn-animation mt-8 py-4 rounded-lg text-white font-semibold text-lg'>Apply Now</button>
 
                                 </div>
                             </div>
