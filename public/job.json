@@ -1,0 +1,22 @@
+[
+    {
+        "logo": "https://example.com/logo1.png",
+        "name": "ABC Design Studio",
+        "jobs": "100+ jobs available"
+    },
+    {
+        "logo": "https://example.com/logo2.png",
+        "name": "XYZ Branding",
+        "jobs": "50+ jobs available"
+    },
+    {
+        "logo": "https://example.com/logo3.png",
+        "name": "PQR Design Co.",
+        "jobs": "20+ jobs available"
+    },
+    {
+        "logo": "https://example.com/logo4.png",
+        "name": "LMN Creative Agency",
+        "jobs": "10+ jobs available"
+    }
+]
