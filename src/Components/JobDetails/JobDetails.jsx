@@ -28,8 +28,8 @@ const JobDetails = () => {
         <div>
             <JobDetailsBanner></JobDetailsBanner>
             <div className='my-container'>
-                <div className='flex gap-4'>
-                    <div className='w-8/12'>
+                <div className='lg:flex gap-4'>
+                    <div className='w-full lg:w-8/12'>
                         <p className='text-[#757575] mb-4'><span className='text-lg font-semibold text-[#1A1919]'>Job Description:</span>{job_description}</p>
 
                         <p className='text-[#757575] mb-4'><span className='text-lg font-semibold text-[#1A1919]'>Job Responsibility:</span> {job_responsibility}</p>
@@ -41,7 +41,7 @@ const JobDetails = () => {
                         <p className='text-[#757575] mb-4'>{experiences}</p>
                     </div>
 
-                    <div className='w-4/12 bg-violet-50 rounded-lg pl-7 pr-7 pt-7'>
+                    <div className='w-full lg:w-4/12 bg-violet-50 rounded-lg pl-7 pr-7 pt-7'>
                         <div>
                             <h3 className='text-lg font-semibold mb-5'>Job Details <hr /> </h3>
 

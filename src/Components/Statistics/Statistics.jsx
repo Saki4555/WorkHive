@@ -18,20 +18,28 @@ const assignments = [
 const Statistics = () => {
     return (
         <div>
-            <div className='bg-slate-100 pt-40 pb-16 -mt-40'>
-                <h2 className='text-3xl font-bold text-center text-slate-600'>Assignment Marks</h2>
+            <div className='bg-slate-100 pt-40 pb-16 -mt-40 flex'>
+                <div className='-mb-16'>
+                    <img src="/Vector.png" alt="" />
+                </div>
+                <div className='flex items-center mx-auto'>
+                    <h2 className='text-4xl font-bold text-center text-slate-600'>Assignment Marks</h2>
+                </div>
+                <div className='-mt-24'>
+                    <img src="/job-details.png" alt="" />
+                </div>
             </div>
-            
-           <div  className='my-container'>
-           <AreaChart width={700} height={400} data={assignments}
-            >
-                <CartesianGrid strokeDasharray="12 12" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Area type="monotone" dataKey="marks" stroke="#8884d8" fill="#AF7AC5 "></Area>
-            </AreaChart>
-           </div>
+
+            <div className='my-container'>
+                <AreaChart width={700} height={400} data={assignments}
+                >
+                    <CartesianGrid strokeDasharray="12 12" />
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip />
+                    <Area type="monotone" dataKey="marks" stroke="#8884d8" fill="#AF7AC5 "></Area>
+                </AreaChart>
+            </div>
 
         </div>
     );

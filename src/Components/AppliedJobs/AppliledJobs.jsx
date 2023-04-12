@@ -34,12 +34,12 @@ const AppliledJobs = () => {
     const filterBy = (type) => {
 
         console.log(type);
-        
+
         if (type) {
             const filteredJobs = temp.filter(job => job.remote_or_onsite === type);
             setAppliedJobs(filteredJobs);
         }
-        else{
+        else {
             setAppliedJobs(temp);
         }
     }
@@ -47,8 +47,16 @@ const AppliledJobs = () => {
     return (
         <div>
 
-            <div className='bg-slate-100 pt-40 pb-16 -mt-40'>
-                <h2 className='text-4xl font-bold text-center text-slate-600'>Applied Jobs</h2>
+            <div className='bg-slate-100 pt-40 pb-16 -mt-40 flex'>
+                <div className='-mb-16'>
+                    <img src="/Vector.png" alt="" />
+                </div>
+                <div className='flex items-center mx-auto'>
+                    <h2 className='text-4xl font-bold text-center text-slate-600'>Applied Jobs</h2>
+                </div>
+                <div className='-mt-24'>
+                    <img src="/job-details.png" alt="" />
+                </div>
             </div>
             <div className='w-3/4 mx-auto relative mt-8 pb-8'>
                 <div className='absolute top-0 right-0'>
