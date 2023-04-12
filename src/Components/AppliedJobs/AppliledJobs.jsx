@@ -47,7 +47,7 @@ const AppliledJobs = () => {
         <div>
 
             <div className='bg-slate-100 pt-40 pb-16 -mt-40'>
-                <h2 className='text-5xl font-bold text-center text-slate-600'>Applied Jobs</h2>
+                <h2 className='text-4xl font-bold text-center text-slate-600'>Applied Jobs</h2>
             </div>
             <div className='w-3/4 mx-auto relative mt-8 pb-8'>
                 <div className='absolute top-0 right-0'>
