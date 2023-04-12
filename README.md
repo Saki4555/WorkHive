@@ -15,7 +15,7 @@ Here are some of the best features of our website:
 
 ## Live Link
 
-You can access the live version of the website at https://www.myjobsite.com.
+You can access the live version of the website at https://stalwart-medovik-3b98ff.netlify.app/
 
 Thank you for using WorkHive!
 
