@@ -42,7 +42,6 @@ const AppliledJobs = () => {
         }
     }
 
-    console.log(appliedJobs);
     return (
         <div>
 

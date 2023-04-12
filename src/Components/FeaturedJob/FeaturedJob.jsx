@@ -26,7 +26,7 @@ const FeaturedJob = () => {
         }
     }, [seeAll, temp])
 
-    console.log(featuredJobs);
+
 
 
 
