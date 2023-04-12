@@ -32,9 +32,11 @@ const AppliledJobs = () => {
     }, [featuredJobs])
 
     const filterBy = (type) => {
+
+        console.log(type);
         
         if (type) {
-            const filteredJobs = appliedJobs.filter(job => job.remote_or_onsite === type);
+            const filteredJobs = temp.filter(job => job.remote_or_onsite === type);
             setAppliedJobs(filteredJobs);
         }
         else{
