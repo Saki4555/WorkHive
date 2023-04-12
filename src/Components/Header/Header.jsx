@@ -54,7 +54,8 @@ const Header = () => {
 
                 </ul>
                 <div className='items-center hidden space-x-8 lg:flex'>
-                    <button className='btn-bg px-4 py-3 rounded-lg text-white font-medium btn-animation'>Start Applying</button>
+                    <Link to='/'><button className='btn-bg px-4 py-3 rounded-lg text-white font-medium btn-animation'>Start Applying</button></Link>
+                    
                 </div>
                 {/* Mobile Navbar Section */}
                 <div className='lg:hidden'>
@@ -122,7 +123,8 @@ const Header = () => {
                                             </Link>
                                         </li>
                                         <li>
-                                            <button className='btn-bg px-2 py-2 rounded-lg text-white btn-animation'>Start Applying</button>
+                                            <Link to='/'><button className='btn-bg px-2 py-2 rounded-lg text-white btn-animation'>Start Applying</button></Link>
+                                            
                                         </li>
                                     </ul>
                                 </nav>
